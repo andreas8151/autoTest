@@ -1,0 +1,14 @@
+name: second Workflow
+
+on:
+  push:
+    branches-ignore:
+      - main
+
+jobs:
+  print-branch:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print Branch Name
+        run: "echo branch: not main!!"

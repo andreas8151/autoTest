@@ -11,4 +11,4 @@ jobs:
 
     steps:
       - name: Print Branch Name
-        run: "echo branch: not main!!"
+        run: "echo branch: ${{ github.ref }}"
